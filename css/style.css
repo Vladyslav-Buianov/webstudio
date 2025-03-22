@@ -110,6 +110,14 @@ body{
     background-color: var(--button-and-team-section-background);
 }
 
+.усі-btn:focus{
+    background-color: var(--accent-color);
+}
+
+.усі-btn:hover{
+    background-color: var(--accent-color);
+}
+
 .усі-title{
     color: var(--text-color);
     font-size: 18px;
