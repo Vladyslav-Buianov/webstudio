@@ -5,7 +5,7 @@
     --desk-color:#757575;
     --main-color:#FFF;
     --footer-link: rgba(255, 255, 255, 0.60);
-    --footer-background:#2F303A;
+    --footer-and-hero-background:#2F303A;
     --button-and-our-section-background:#F5F4FA;
 }
 
@@ -35,7 +35,19 @@ body{
     letter-spacing: 0.28px;
 }
 
+.header-element{
+    color: var(--desk-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.28px;
+}
+
 .header-link:hover{
+    color: var(--accent-color);
+}
+
+.header-element:hover{
     color: var(--accent-color);
 }
 
@@ -43,6 +55,10 @@ body{
     color: var(--desk-color);
 }
 /* section hero */
+.hero{
+    background-color: var(--footer-and-hero-background);
+}
+
 .hero-title{
     color: var(--main-color);
     font-size: 44px;
@@ -68,7 +84,7 @@ body{
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    line-height: 1,16;
+    line-height: 1.16;
     letter-spacing: 1.08px;
 }
 /* section attention */
@@ -157,7 +173,7 @@ body{
 
 /* section footer */
 .footer{
-    background-color: var(--footer-background);
+    background-color: var(--footer-and-hero-background);
 }
 
 .footer-logo{
