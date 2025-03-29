@@ -51,9 +51,6 @@ body{
     color: var(--accent-color);
 }
 
-.header-location{
-    color: var(--desk-color);
-}
 /* section hero */
 .hero{
     background-color: var(--footer-and-hero-background);
