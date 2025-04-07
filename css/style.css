@@ -14,6 +14,11 @@ body{
 }
 
 /* section header */
+.header{
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
 .header-logo{
     color: var(--accent-color);
     font-family: Raleway;
@@ -54,6 +59,8 @@ body{
 /* section hero */
 .hero{
     background-color: var(--footer-and-hero-background);
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .hero-title{
@@ -75,16 +82,12 @@ body{
     background-color: var(--accent-color);
 }
 
-/* section whereby */
-.whereby-title{
-    color: var(--text-color);
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
-}
 /* section attention */
+.attention{
+    padding-top: 94px;
+    padding-bottom: 59px;
+}
+
 .attention-title{
     color: var(--text-color);
     font-size: 14px;
@@ -102,9 +105,26 @@ body{
     letter-spacing: 0.42px;
 }
 
+/* section whereby */
+.whereby{
+    padding-top: 59px;
+    padding-bottom: 94px;
+}
+
+.whereby-title{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+}
+
 /* section наша */
 .our{
     background-color: var(--button-and-our-section-background);
+    padding-top: 94px;
+    padding-bottom: 124px;
 }
 
 .our-title{
@@ -133,6 +153,12 @@ body{
 }
 
 /* everybody */
+
+.everybody{
+    padding-top: 100px;
+    padding-bottom: 114px;
+}
+
 .everybody-btn{
     color: var(--text-color);
     font-size: 16px;
@@ -171,6 +197,8 @@ body{
 /* section footer */
 .footer{
     background-color: var(--footer-and-hero-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-logo{
