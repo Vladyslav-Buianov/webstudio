@@ -85,7 +85,6 @@ body{
 /* section attention */
 .attention{
     padding-top: 94px;
-    padding-bottom: 59px;
 }
 
 .attention-title{
@@ -107,7 +106,7 @@ body{
 
 /* section whereby */
 .whereby{
-    padding-top: 59px;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -124,7 +123,7 @@ body{
 .our{
     background-color: var(--button-and-our-section-background);
     padding-top: 94px;
-    padding-bottom: 124px;
+    padding-bottom: 94px;
 }
 
 .our-title{
@@ -155,8 +154,8 @@ body{
 /* everybody */
 
 .everybody{
-    padding-top: 100px;
-    padding-bottom: 114px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .everybody-btn{
