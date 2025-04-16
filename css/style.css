@@ -110,7 +110,8 @@ body{
     line-height: 1.87;
     letter-spacing: 0.96px;
     background-color: var(--accent-color);
-    width: 216px;
+    border-radius: 4px;
+    padding: 10px 32px;
 }
 
 /* section attention */
@@ -192,6 +193,7 @@ body{
 .our-box{
     background-color: var(--main-color);
     padding: 30px 0;
+    border-radius: 0px 0px 4px 4px;
     display: flex;
     flex-direction: column;
     text-align: center;
