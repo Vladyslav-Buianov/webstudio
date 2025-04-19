@@ -12,6 +12,10 @@ a{
     text-decoration: none;
 }
 
+address{
+    font-style: normal;
+}
+
 button{
     border: none;
     cursor: pointer;
