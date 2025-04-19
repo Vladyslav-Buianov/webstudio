@@ -4,6 +4,7 @@
     --text-color:#212121;
     --desk-color:#757575;
     --main-color:#FFF;
+    --outline-everybody-color:#EEE;
     --footer-link: rgba(255, 255, 255, 0.60);
     --footer-and-hero-background:#2F303A;
     --button-and-our-section-background:#F5F4FA;
@@ -194,7 +195,7 @@ body{
     width: 270px;
 }
 
-.our-box{
+.our-wrapper{
     background-color: var(--main-color);
     padding: 30px 0;
     border-radius: 0px 0px 4px 4px;
@@ -227,12 +228,21 @@ body{
     padding-bottom: 94px;
 }
 
+.everybody-items{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
 .everybody-btn{
     color: var(--text-color);
     font-size: 16px;
     font-weight: 500;
     line-height: 1.62;
     letter-spacing: 0.48px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    margin-bottom: 50px;
     background-color: var(--button-and-our-section-background);
 }
 
@@ -241,9 +251,22 @@ body{
     color: var(--main-color);
 }
 
-.everybody-btn:hover{
-    background-color: var(--accent-color);
-    color: var(--main-color);
+.everybody-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.everybody-img{
+    width: 370px;
+}
+
+.everybody-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px 24px;
+    outline: 1px solid var(--outline-everybody-color);
 }
 
 .everybody-title{
