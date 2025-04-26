@@ -168,6 +168,10 @@ body{
     gap: 30px;
 }
 
+.whereby-item{
+    flex-basis: calc((100% - 60px) / 3);
+}
+
 
 /* section наша */
 .our{
@@ -192,8 +196,8 @@ body{
     gap: 30px;
 }
 
-.our-img{
-    width: 270px;
+.our-item{
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .our-wrapper{
@@ -262,8 +266,8 @@ body{
     gap: 30px;
 }
 
-.everybody-img{
-    width: 370px;
+.everybody-item{
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .everybody-wrapper{
