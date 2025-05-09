@@ -7,7 +7,7 @@
     --outline-everybody-color:#EEE;
     --footer-link: rgba(255, 255, 255, 0.60);
     --footer-and-hero-background:#2F303A;
-    --button-before-and-our-section-background:#F5F4FA;
+    --button-before-and-our-section-bg:#F5F4FA;
 }
 
 body{
@@ -87,6 +87,10 @@ body{
     background-color: var(--footer-and-hero-background);
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: url(../img/working.webp),linear-gradient(360deg,rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-box{
@@ -136,22 +140,22 @@ body{
     width: 100%;
     height: 120px;
     border-radius: 4px;
-    background-color:var(--button-before-and-our-section-background);
-    background-image: url(../img/before1.png);
+    background-color:var(--button-before-and-our-section-bg);
+    background-image: url(../img/antena.webp);
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .attention-item:nth-child(2)::before{
-    background-image: url(../img/before2.png);
+    background-image: url(../img/clock.webp);
 }
 
 .attention-item:nth-child(3)::before{
-    background-image: url(../img/before3.png);
+    background-image: url(../img/laptop.webp);
 }
 
 .attention-item:nth-child(4)::before{
-    background-image: url(../img/before4.png);
+    background-image: url(../img/astronaut.webp);
 }
 
 .attention-title{
@@ -200,7 +204,7 @@ body{
 
 /* section наша */
 .our{
-    background-color: var(--button-and-our-section-background);
+    background-color: var(--button-before-and-our-section-bg);
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -272,7 +276,7 @@ body{
     letter-spacing: 0.48px;
     padding: 6px 22px;
     border-radius: 4px;
-    background-color: var(--button-and-our-section-background);
+    background-color: var(--button-before-and-our-section-bg);
 }
 
 .everybody-btn:focus{
