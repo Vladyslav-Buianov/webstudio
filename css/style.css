@@ -87,7 +87,7 @@ body{
     background-color: var(--footer-and-hero-background);
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: url(../img/working.webp),linear-gradient(360deg,rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40));
+    background-image: linear-gradient(360deg,rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)),url(../img/working.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -121,6 +121,7 @@ body{
     background-color: var(--accent-color);
     border-radius: 4px;
     padding: 10px 32px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* section attention */
@@ -227,6 +228,7 @@ body{
 
 .our-item{
     flex-basis: calc((100% - 90px) / 4);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 .our-wrapper{
@@ -282,11 +284,13 @@ body{
 .everybody-btn:focus{
     background-color: var(--accent-color);
     color: var(--main-color);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .everybody-btn:hover{
     background-color: var(--accent-color);
     color: var(--main-color);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
 .everybody-list{
@@ -297,6 +301,10 @@ body{
 
 .everybody-item{
     flex-basis: calc((100% - 60px) / 3);
+}
+
+.everybody-item:hover{
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
 }
 
 .everybody-wrapper{
