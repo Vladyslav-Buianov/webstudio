@@ -8,6 +8,7 @@
     --footer-link: rgba(255, 255, 255, 0.60);
     --footer-and-hero-background:#2F303A;
     --button-before-and-our-section-bg:#F5F4FA;
+    --portafolio-line:#ECECEC;
 }
 
 body{
@@ -64,6 +65,10 @@ body{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+}
+
+.active{
+    color: var(--accent-color);
 }
 
 .header-content{
@@ -261,6 +266,7 @@ body{
 .everybody{
     padding-top: 94px;
     padding-bottom: 94px;
+    border-top: 1px solid var(--portafolio-line);
 }
 
 .everybody-items{
