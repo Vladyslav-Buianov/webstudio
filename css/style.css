@@ -450,7 +450,7 @@ body{
 
 .footer-box{
     display: flex;
-    align-items: start;
+    align-items: baseline;
     gap: 70px;
 }
 
