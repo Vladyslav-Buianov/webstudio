@@ -406,7 +406,12 @@ body{
     }
 }
 
-
+.clients-link:focus{
+    outline: 1px solid var(--accent-color);
+    .clients-icon{
+        fill: var(--accent-color);
+    }
+}
 
 /* everybody */
 
@@ -556,6 +561,10 @@ body{
 }
 
 .footer-sending:hover{
+    background-color: var(--accent-color);
+}
+
+.footer-sending:focus{
     background-color: var(--accent-color);
 }
 
