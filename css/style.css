@@ -11,6 +11,7 @@
     --button-before-and-our-section-bg:#F5F4FA;
     --portafolio-line:#ECECEC;
     --footer-icon-bg:rgba(255, 255, 255, 0.1);
+    --whereby-desk-bg-color: rgba(47, 48, 58, 0.80);;
 }
 
 body{
@@ -228,6 +229,10 @@ body{
     margin-bottom: 50px;
 }
 
+.whereby-wrapper{
+    position: absolute;
+}
+
 .whereby-list{
     display: flex;
     gap: 30px;
@@ -235,6 +240,32 @@ body{
 
 .whereby-item{
     flex-basis: calc((100% - 60px) / 3);
+}
+
+.whereby-items{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    position: relative;
+    bottom: 70px;
+    z-index: 2;
+}
+
+.whereby-element{
+    width: 370px;
+    height: 70px;
+    background-color: var(--whereby-desk-bg-color);
+}
+
+.whereby-desk{
+    color: var(--main-color);
+    padding: 27px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
 }
 
 
