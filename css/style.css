@@ -239,26 +239,13 @@ body{
 }
 
 .whereby-item{
-    flex-basis: calc((100% - 60px) / 3);
-}
-
-.whereby-items{
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    position: relative;
-    bottom: 70px;
-    z-index: 2;
-}
-
-.whereby-element{
-    width: 370px;
-    height: 70px;
-    background-color: var(--whereby-desk-bg-color);
+    position: relative
 }
 
 .whereby-desk{
+    background-color: var(--whereby-desk-bg-color);
     color: var(--main-color);
+    width: 370px;
     padding: 27px 0;
     text-align: center;
     font-size: 14px;
@@ -266,6 +253,9 @@ body{
     line-height: 1.14;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
 }
 
 
