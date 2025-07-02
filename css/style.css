@@ -73,6 +73,10 @@ body{
     color: var(--accent-color);
 }
 
+.header-link:focus{
+    color: var(--accent-color);
+}
+
 .header-items{
     display: flex;
     align-items: center;
@@ -104,6 +108,16 @@ body{
 }
 
 .header-element :hover{
+    color: var(--accent-color);
+    .header-icon{
+        fill: var(--accent-color);
+    }
+    .header-ikon{
+        fill: var(--accent-color);
+    }
+}
+
+.header-element :focus{
     color: var(--accent-color);
     .header-icon{
         fill: var(--accent-color);
@@ -334,6 +348,13 @@ body{
 }
 
 .our-link:hover{
+    background-color: var(--accent-color);
+    .our-icon{
+        fill: var(--main-color);
+    }
+}
+
+.our-link:focus{
     background-color: var(--accent-color);
     .our-icon{
         fill: var(--main-color);
