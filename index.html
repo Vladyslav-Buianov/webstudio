@@ -27,16 +27,14 @@
                     <a class="header-sending" href="mailto:info@devstudio.com">
                         <svg class="header-icon">
                             <use href="./img/symbol-defs.svg#header-email"></use>
-                        </svg>
-                        info@devstudio.com
+                        </svg>info@devstudio.com
                 </a>
                 </li>
                 <li class="header-element">
                     <a class="header-sending" href="tel:+38 096 111 11 11">
                         <svg class="header-ikon">
                             <use href="./img/symbol-defs.svg#header-phone"></use>
-                        </svg>
-                        +38 096 111 11 11
+                        </svg>+38 096 111 11 11
                     </a>
                 </li>
             </ul>
@@ -47,7 +45,7 @@
        <section class="hero">
             <div class="container hero-box">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button class="hero-btn" type="button">Замовити послугу</button> 
+                <button class="hero-btn" data-modal-open type="button">Замовити послугу</button> 
             </div>
        </section> 
        <!-- attention -->
@@ -307,7 +305,7 @@
                 <a class="footer-logo" lang="en" href="./index.html">Web<span class="footer-color">Studio</span></a>
                 <address class="footer-location">
                     <ul class="footer-list">
-                        <li class="footer-item"><a class="footer-link" lang="en" target="_blank" href="https://www.google.com/maps/search/%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26/@50.4729106,30.4060483,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D">м. Київ, пр-т Лесі Українки, 26</a></li>
+                        <li class="footer-item"><a class="footer-link" target="_blank" href="https://www.google.com/maps/search/%D0%BC.+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%BF%D1%80-%D1%82+%D0%9B%D0%B5%D1%81%D1%96+%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D0%BA%D0%B8,+26/@50.4729106,30.4060483,12z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D">м. Київ, пр-т Лесі Українки, 26</a></li>
                         <li class="footer-item"><a class="footer-link" lang="en" target="_blank" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li class="footer-item"><a class="footer-link" target="_blank" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
@@ -348,5 +346,47 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden">
+        <div data-modal class="modal">
+            <button class="modal-close" data-modal-close>
+                <svg class="modal-icon">
+                    <use href="./img/symbol-defs.svg#form-close"></use>
+                </svg>
+            </button>
+            <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+            <form class="modal-form">
+                <label class="modal-label">Ім'я
+                    <input required class="modal-input" type="text" />
+                    <svg class="modal-ikon">
+                        <use href="./img/symbol-defs.svg#form-person"></use>
+                    </svg>
+                </label>
+                <label class="modal-label">Телефон
+                    <input placeholder="Введіть у форматі 050 000 000 0000" pattern="0\d{2}\s\d{3}\s\d{3}\s\d{4}" required class="modal-input" type="tel" />
+                    <svg class="modal-ikon">
+                        <use href="./img/symbol-defs.svg#form-phone"></use>
+                    </svg>
+                </label>
+                <label class="modal-label">Пошта
+                    <input required class="modal-input" type="email" />
+                    <svg class="modal-ikon">
+                        <use href="./img/symbol-defs.svg#form-email"></use>
+                    </svg>
+                </label>
+                <label class="modal-label">Коментар
+                    <textarea placeholder="Введіть текст" class="modal-comment"></textarea>
+                </label>
+                <label class="modal-box">
+                    <input required type="checkbox" class="modal-check" />
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="modal-link">Умови договору</a>
+                </label>
+                <div class="modal-wrap">
+                    <button type="submit" class="modal-sent">Відправити</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
