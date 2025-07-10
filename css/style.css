@@ -14,8 +14,11 @@
     --whereby-desk-bg-color:rgba(47, 48, 58, 0.80);
     --backdrop-overlay-color:rgba(0, 0, 0, 0.20);
     --modal-close-color:rgba(0, 0, 0, 0.10);
-    --input-textarea-outline-color:rgba(33, 33, 33, 0.2);
-    --input-textarea-text-color:rgba(117, 117, 117, 0.5);
+    --modal-input-textarea-outline-color:rgba(33, 33, 33, 0.2);
+    --modal-input-textarea-text-color:rgba(117, 117, 117, 0.5);
+    --modal-btn-hover-color:#188CE8;
+    --footer-input-text-color:rgba(255, 255, 255, 0.60);
+    --footer-input-outline-color:rgba(255, 255, 255, 0.30);
 }
 
 body{
@@ -578,6 +581,58 @@ body{
     fill: var(--main-color);
 }
 
+.footer-subtitle{
+    margin-bottom: 20px;
+    color: var(--main-color);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.footer-form{
+    position: relative;
+}
+
+.footer-input{
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    outline: 1px solid var(--footer-input-outline-color);
+    border-radius: 4px;
+    border: none;
+    background-color: transparent;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--footer-input-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.48px;
+}
+
+.footer-btn{
+    padding: 10px 62px 10px 28px;
+    margin-left: 12px;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.96px;
+}
+
+.footer-ikon{
+    width: 24px;
+    height: 24px;
+    fill: var(--main-color);
+    position: absolute;
+    top: 13px;
+    right: 30px;
+}
+
 /* modal */
 
 .backdrop{
@@ -659,10 +714,14 @@ body{
   border: none;
   padding-left: 42px;
   border-radius: 4px;
-  outline: 1px solid var(--input-textarea-outline-color);
-  color: var(--input-textarea-text-color);
+  outline: 1px solid var(--modal-input-textarea-outline-color);
+  color: var(--modal-input-textarea-text-color);
   display: block;
   margin-top: 4px;
+}
+
+.modal-input:is(:hover,:focus){
+    outline: 1px solid var(--accent-color);
 }
 
 .modal-ikon{
@@ -674,21 +733,30 @@ body{
     left: 12px;
 }
 
+.modal-input:hover + .modal-ikon,
+.modal-input:focus + .modal-ikon{
+    fill: var(--accent-color);
+}
+
 .modal-comment {
   padding: 12px 16px;
   margin-top: 4px;
   width: 100%;
   height: 120px;
   border-radius: 4px;
-  outline: 1px solid var(--input-textarea-outline-color);
+  outline: 1px solid var(--modal-input-textarea-outline-color);
   border: none;
   display: block;
-  color: var(--input-textarea-text-color);
+  color: var(--modal-input-textarea-text-color);
   font-size: 12px;
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.12px;
   resize: none;
+}
+
+.modal-comment:is(:hover,:focus){
+    outline: 1px solid var(--accent-color);
 }
 
 .modal-box {
@@ -704,6 +772,10 @@ body{
   align-items: center;
 }
 
+.modal-check {
+  margin-right: 9px;
+}
+
 .modal-link {
     margin-left: 5px;
     color: var(--accent-color);
@@ -711,8 +783,9 @@ body{
     text-decoration-skip-ink: none;
 }
 
-.modal-check {
-  margin-right: 9px;
+.modal-wrap{
+    display: flex;
+    justify-content: center;
 }
 
 .modal-sent {
@@ -726,7 +799,7 @@ body{
   background-color: var(--accent-color);
 }
 
-.modal-wrap{
-    display: flex;
-    justify-content: center;
+.modal-sent:is(:hover,:focus){
+    background-color: var(--modal-btn-hover-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
