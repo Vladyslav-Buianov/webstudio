@@ -505,7 +505,10 @@ body{
 .footer-box{
     display: flex;
     align-items: baseline;
-    gap: 70px;
+}
+
+.footer-wrapper{
+    margin-right: 70px;
 }
 
 .footer-logo{
@@ -540,6 +543,12 @@ body{
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
+
+.footer-wrap{
+    margin-right: 93px;
+}
+
+
 
 .footer-title{
     margin-bottom: 20px;
@@ -642,7 +651,6 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 1;
 }
 
 .is-hidden{
@@ -661,6 +669,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+    opacity: 1;
 }
 
 .modal-close{
