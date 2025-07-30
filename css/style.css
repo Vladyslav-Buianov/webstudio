@@ -324,7 +324,7 @@ body{
 }
 
 .our-wrapper{
-    padding: 30px 0 16px;
+    padding: 30px 0;
 }
 
 .our-subtitle{
@@ -347,7 +347,7 @@ body{
 }
 
 .our-items{
-    margin-bottom: 30px;
+    margin-top: 16px;
     display: flex;
     justify-content: center;
     gap: 10px;
