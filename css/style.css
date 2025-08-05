@@ -6,7 +6,7 @@
     --main-color:#FFF;
     --outline-everybody-color:#EEE;
     --icon-color:#AFB1B8;
-    --footer-link: rgba(255, 255, 255, 0.60);
+    --footer-link-color: rgba(255, 255, 255, 0.60);
     --footer-and-hero-background:#2F303A;
     --button-before-and-our-section-bg:#F5F4FA;
     --header-line:#ECECEC;
@@ -100,6 +100,22 @@ body{
     position: absolute;
     top: 48px;
     left: 0;
+    animation-name: active;
+    animation-duration: 3500ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes active{
+    0%{
+        background-color: var(--accent-color);
+    }
+    50%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: var(--accent-color);
+    }
 }
 
 .header-items{
@@ -193,7 +209,12 @@ body{
     border-radius: 4px;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    animation-name: btn-change;
+    animation-duration: 3500ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
 }
+
 
 /* attention */
 .attention{
@@ -580,7 +601,7 @@ body{
 }
 
 .footer-link{
-    color: var(--footer-link);
+    color: var(--footer-link-color);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -673,6 +694,25 @@ body{
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.96px;
+    animation-name: btn-change;
+    animation-duration: 3500ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes btn-change{
+    0%{
+        color: var(--main-color);
+        background-color: var(--accent-color);
+    }
+    50%{
+        color: var(--accent-color);
+        background-color: var(--main-color);
+    }
+    100%{
+        color: var(--main-color);
+        background-color: var(--accent-color);
+    }
 }
 
 .footer-ikon{
@@ -682,6 +722,22 @@ body{
     position: absolute;
     top: 13px;
     right: 30px;
+    animation-name: icon-change;
+    animation-duration: 3500ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
+}
+
+@keyframes icon-change{
+    0%{
+        fill: var(--main-color);
+    }
+    50%{
+        fill: var(--accent-color);
+    }
+    100%{
+        fill: var(--main-color);
+    }
 }
 
 /* modal */
