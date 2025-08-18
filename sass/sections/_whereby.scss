@@ -1,0 +1,43 @@
+.whereby{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.whereby-title{
+    color: var(--text-color);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.whereby-wrapper{
+    position: absolute;
+}
+
+.whereby-list{
+    display: flex;
+    gap: 30px;
+}
+
+.whereby-item{
+    position: relative
+}
+
+.whereby-desk{
+    background-color: var(--whereby-desk-bg-color);
+    color: var(--main-color);
+    width: 370px;
+    padding: 27px 0;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
