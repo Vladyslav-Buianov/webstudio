@@ -661,11 +661,11 @@ body {
   opacity: 1;
 }
 
-.is-hidden {
+.is__hidden {
   opacity: 0;
   pointer-events: none;
 }
-.is-hidden .modal {
+.is__hidden .modal {
   transform: translate(0) rotate(720deg) scale(0);
 }
 
