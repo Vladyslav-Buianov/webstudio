@@ -1,5 +1,5 @@
 .backdrop{
-    background-color: var(--backdrop-overlay-color);
+    background-color: $backdrop-overlay-color;
     position: fixed;
     top: 0;
     left: 0;
@@ -18,7 +18,7 @@
 }
 
 .modal{
-    background-color: var(--main-color);
+    background-color: $main-color;
     padding: 40px;
     width: 528px;
     height: 581px;
@@ -39,7 +39,7 @@
     height: 30px;
     border-radius: 50%;
     background-color: transparent;
-    outline: 1px solid var(--modal-close-color);
+    outline: 1px solid $modal-close-color;
     border: none;
     display: flex;
     justify-content: center;
@@ -59,12 +59,12 @@
 
 .modal-close:is(:hover,:focus) {
   .modal-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 
 .modal-title{
-    color: var(--text-color);
+    color: $text-color;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -73,7 +73,7 @@
 }
 
 .modal-label {
-  color: var(--desk-color);
+  color: $desk-color;
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
@@ -88,8 +88,8 @@
     border: none;
     padding-left: 42px;
     border-radius: 4px;
-    outline: 1px solid var(--modal-input-textarea-outline-color);
-    color: var(--modal-input-textarea-text-color);
+    outline: 1px solid $modal-input-textarea-outline-color;
+    color: $modal-input-textarea-text-color;
     display: block;
     margin-top: 4px;
     transition-property: outline;
@@ -98,13 +98,13 @@
 }
 
 .modal-input:is(:hover,:focus){
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
 }
 
 .modal-ikon{
     width: 18px;
     height: 18px;
-    fill: var(--text-color);
+    fill: $text-color;
     position: absolute;
     top: 30px;
     left: 12px;
@@ -113,9 +113,8 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover + .modal-ikon,
-.modal-input:focus + .modal-ikon{
-    fill: var(--accent-color);
+.modal-input:is(:hover, :focus) + .modal-ikon{
+    fill: $accent-color;
 }
 
 .modal-comment {
@@ -124,10 +123,10 @@
     width: 100%;
     height: 120px;
     border-radius: 4px;
-    outline: 1px solid var(--modal-input-textarea-outline-color);
+    outline: 1px solid $modal-input-textarea-outline-color;
     border: none;
     display: block;
-    color: var(--modal-input-textarea-text-color);
+    color: $modal-input-textarea-text-color;
     font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
@@ -139,7 +138,7 @@
 }
 
 .modal-comment:is(:hover,:focus){
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid $accent-color;
 }
 
 .modal-box {
@@ -147,7 +146,7 @@
   font-size: 14px;
   line-height: 1.16;
   letter-spacing: 0.36px;
-  color: var(--desk-color);
+  color: $desk-color;
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -161,7 +160,7 @@
 
 .modal-link {
     margin-left: 5px;
-    color: var(--accent-color);
+    color: $accent-color;
     text-decoration: underline;
     text-decoration-skip-ink: none;
 }
@@ -177,15 +176,15 @@
     line-height: 1.87;
     letter-spacing: 0.96px;
     text-align: center;
-    color: var(--main-color);
+    color: $main-color;
     padding: 10px 52px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     transition-property: background-color box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-sent:is(:hover,:focus){
-    background-color: var(--modal-btn-hover-color);
+    background-color: $modal-btn-hover-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }

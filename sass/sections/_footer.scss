@@ -1,20 +1,19 @@
 .footer{
-    background-color: var(--footer-and-hero-background);
+    background-color: $footer-and-hero-background;
     padding-top: 60px;
     padding-bottom: 60px;
-}
 
-.footer-box{
+    &__box{
     display: flex;
     align-items: baseline;
 }
 
-.footer-wrapper{
+&__wrapper{
     margin-right: 70px;
 }
 
-.footer-logo{
-    color: var(--accent-color);
+&__logo{
+    color: $accent-color;
     display: block;
     font-family: Raleway;
     font-size: 26px;
@@ -24,37 +23,35 @@
     margin-bottom: 20px;
 }
 
-.footer-color{
-    color: var(--main-color);
+&__color{
+    color: $main-color;
 }
 
-.footer-list{
+&__list{
     display: flex;
     flex-direction: column;
     gap: 9px;
+
+    & :first-child>.footer__link{
+    color: $main-color;
+}
 }
 
-.footer-list :first-child>.footer-link{
-    color: var(--main-color);
-}
-
-.footer-link{
-    color: var(--footer-link-color);
+    &__link{
+    color: $footer-link-color;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
 }
 
-.footer-wrap{
+&__wrap{
     margin-right: auto;
 }
 
-
-
-.footer-title{
+&__title{
     margin-bottom: 20px;
-    color: var(--main-color);
+    color: $main-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -62,38 +59,38 @@
     text-transform: uppercase; 
 }
 
-.footer-items{
+&__items{
     display: flex;
     justify-content: center;
     gap: 10px;
 }
 
-.footer-sending{
+&__sending{
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: var(--footer-icon-bg);
+    background-color: $footer-icon-bg;
     display: flex;
     justify-content: center;
     align-items: center;
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:is(:hover,:focus){
+    background-color: $accent-color;
+}
 }
 
-.footer-sending:is(:hover,:focus){
-    background-color: var(--accent-color);
-}
-
-.footer-icon{
+&__icon{
     width: 20px;
     height: 20px;
-    fill: var(--main-color);
+    fill: $main-color;
 }
 
-.footer-subtitle{
+&__subtitle{
     margin-bottom: 20px;
-    color: var(--main-color);
+    color: $main-color;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
@@ -101,33 +98,33 @@
     text-transform: uppercase;
 }
 
-.footer-form{
+&__form{
     position: relative;
 }
 
-.footer-input{
+&__input{
     width: 358px;
     height: 50px;
     padding-left: 16px;
-    outline: 1px solid var(--footer-input-outline-color);
+    outline: 1px solid $footer-input-outline-color;
     border-radius: 4px;
     border: none;
     background-color: transparent;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--footer-input-text-color);
+    color: $footer-input-text-color;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.25;
     letter-spacing: 0.48px;
 }
 
-.footer-btn{
+&__btn{
     padding: 10px 62px 10px 28px;
     margin-left: 12px;
     border-radius: 4px;
-    background-color: var(--accent-color);
+    background-color: $accent-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--main-color);
+    color: $main-color;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
@@ -138,25 +135,10 @@
     animation-iteration-count: infinite;
 }
 
-@keyframes btn-change{
-    0%{
-        color: var(--main-color);
-        background-color: var(--accent-color);
-    }
-    50%{
-        color: var(--accent-color);
-        background-color: var(--main-color);
-    }
-    100%{
-        color: var(--main-color);
-        background-color: var(--accent-color);
-    }
-}
-
-.footer-ikon{
+&__ikon{
     width: 24px;
     height: 24px;
-    fill: var(--main-color);
+    fill: $main-color;
     position: absolute;
     top: 13px;
     right: 30px;
@@ -165,15 +147,36 @@
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-iteration-count: infinite;
 }
+}
+
+
+
+
+@keyframes btn-change{
+    0%{
+        color: $main-color;
+        background-color: $accent-color;
+    }
+    50%{
+        color: $accent-color;
+        background-color: $main-color;
+    }
+    100%{
+        color: $main-color;
+        background-color: $accent-color;
+    }
+}
+
+
 
 @keyframes icon-change{
     0%{
-        fill: var(--main-color);
+        fill: $main-color;
     }
     50%{
-        fill: var(--accent-color);
+        fill: $accent-color;
     }
     100%{
-        fill: var(--main-color);
+        fill: $main-color;
     }
 }
