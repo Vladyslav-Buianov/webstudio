@@ -4,10 +4,11 @@
   &__title {
     color: $text-color;
     text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
+    // font-size: 36px;
+    // font-weight: 700;
+    // line-height: 1.16;
+    // letter-spacing: 1.08px;
+    @include font-style ($fSize:36px, $fHeight:1.16, $fSpacing:1.08px);
     margin-bottom: 50px;
   }
 
@@ -30,10 +31,11 @@
     width: 370px;
     padding: 27px 0;
     text-align: center;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
+    // font-size: 14px;
+    // font-weight: 700;
+    // line-height: 1.14;
+    // letter-spacing: 0.42px;
+    @include font-style ($fSize:14px);
     text-transform: uppercase;
     position: absolute;
     z-index: 1;

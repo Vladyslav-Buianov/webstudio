@@ -30,8 +30,7 @@
   transform: translate(-50%, -50%);
   opacity: 1;
   transition-property: transform;
-  transition-duration: 950ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition;
 
   &__close {
     width: 30px;
@@ -57,25 +56,26 @@
     width: 18px;
     height: 18px;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
 
   &__title {
     color: $text-color;
     text-align: center;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: 0.6px;
+    // font-size: 20px;
+    // font-weight: 700;
+    // line-height: 1.15;
+    // letter-spacing: 0.6px;
+    @include font-style ($fSize:20px, $fHeight:1.15, $fSpacing:0.6px);
   }
 
   &__label {
     color: $desk-color;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.12px;
+    // font-size: 12px;
+    // font-weight: 400;
+    // line-height: 1.16;
+    // letter-spacing: 0.12px;
+    @include font-style ($fSize:12px, $fWeight:400, $fHeight:1.16, $fSpacing:0.12px);
     position: relative;
   }
 
@@ -91,8 +91,7 @@
     display: block;
     margin-top: 4px;
     transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 
     &:is(:hover, :focus) {
       outline: 1px solid $accent-color;
@@ -110,8 +109,7 @@
     top: 30px;
     left: 12px;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
 
   &__comment {
@@ -124,14 +122,14 @@
     border: none;
     display: block;
     color: $modal-input-textarea-text-color;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 1.16;
-    letter-spacing: 0.12px;
+    // font-size: 12px;
+    // font-weight: 400;
+    // line-height: 1.16;
+    // letter-spacing: 0.12px;
+    @include font-style ($fSize:12px, $fWeight:400, $fHeight:1.16, $fSpacing:0.12px);
     resize: none;
     transition-property: outline;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 
     &:is(:hover, :focus) {
       outline: 1px solid $accent-color;
@@ -139,10 +137,11 @@
   }
 
   &__box {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.36px;
+    // font-size: 14px;
+    // font-weight: 400;
+    // line-height: 1.16;
+    // letter-spacing: 0.36px;
+    @include font-style ($fSize:14px, $fWeight:400, $fHeight:1.16, $fSpacing:0.36px);
     color: $desk-color;
     display: flex;
     justify-content: center;
@@ -168,17 +167,18 @@
   }
 
   &__sent {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.96px;
+    // font-size: 16px;
+    // font-weight: 700;
+    // line-height: 1.87;
+    // letter-spacing: 0.96px;
+    @include font-style ($fHeight:1.87, $fSpacing:0.96px);
     text-align: center;
     color: $main-color;
     padding: 10px 52px;
     background-color: $accent-color;
     transition-property: background-color box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
+    
     &:is(:hover, :focus) {
       background-color: $modal-btn-hover-color;
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);

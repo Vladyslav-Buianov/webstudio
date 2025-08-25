@@ -33,19 +33,21 @@
 
   &__title {
     color: $text-color;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.14;
-    letter-spacing: 0.42px;
+    // font-size: 14px;
+    // font-weight: 700;
+    // line-height: 1.14;
+    // letter-spacing: 0.42px;
+    @include font-style ($fSize:14px);
     text-transform: uppercase;
     margin-bottom: 10px;
   }
 
   &__text {
     color: $desk-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.42px;
+    // font-size: 14px;
+    // font-weight: 400;
+    // line-height: 1.71;
+    // letter-spacing: 0.42px;
+    @include font-style($fWeight:400, $fHeight:1.71);
   }
 }

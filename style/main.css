@@ -37,6 +37,17 @@ body {
   outline: 1px solid red;
 }
 
+.modal__sent, .modal__comment, .modal__ikon, .modal__input, .modal__icon, .modal, .footer__sending, .everybody__desk, .everybody__item, .everybody__btn, .clients__icon, .clients__link, .our__icon, .our__link, .header__ikon, .header__icon, .header__sending, .header__link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__ikon, .footer__btn, .hero__btn, .active::after {
+  animation-duration: 3500ms;
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  animation-iteration-count: infinite;
+}
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -75,8 +86,6 @@ body {
   letter-spacing: 0.28px;
   position: relative;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__link:is(:hover, :focus) {
   color: #2196F3;
@@ -97,8 +106,6 @@ body {
   align-items: center;
   gap: 10px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__sending:is(:hover, :focus) {
   color: #2196F3;
@@ -114,16 +121,12 @@ body {
   height: 12px;
   fill: #757575;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__ikon {
   width: 10px;
   height: 16px;
   fill: #757575;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
@@ -141,9 +144,6 @@ body {
   top: 48px;
   left: 0;
   animation-name: active;
-  animation-duration: 3500ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-iteration-count: infinite;
 }
 
 @keyframes active {
@@ -159,8 +159,7 @@ body {
 }
 .hero {
   background-color: #2F303A;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 0;
   background-image: linear-gradient(360deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/working.webp);
   background-repeat: no-repeat;
   background-position: center;
@@ -176,7 +175,6 @@ body {
   color: #FFF;
   font-size: 44px;
   font-weight: 900;
-  text-align: center;
   line-height: 1.36;
   letter-spacing: 2.64px;
   text-transform: uppercase;
@@ -194,9 +192,6 @@ body {
   padding: 10px 32px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   animation-name: btn-change;
-  animation-duration: 3500ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-iteration-count: infinite;
 }
 
 .attention {
@@ -238,7 +233,7 @@ body {
 }
 .attention__text {
   color: #757575;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.42px;
@@ -290,9 +285,9 @@ body {
   color: #212121;
   font-size: 36px;
   font-weight: 700;
-  text-align: center;
   line-height: 1.16;
   letter-spacing: 1.08px;
+  text-align: center;
   margin-bottom: 50px;
 }
 .our__list {
@@ -325,6 +320,10 @@ body {
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: 0.48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.48px;
 }
 .our__items {
   margin-top: 16px;
@@ -340,8 +339,6 @@ body {
   justify-content: center;
   align-items: center;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .our__link:is(:hover, :focus) {
   background-color: #2196F3;
@@ -354,8 +351,6 @@ body {
   width: 20px;
   height: 20px;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients {
@@ -384,8 +379,6 @@ body {
   justify-content: center;
   align-items: center;
   transition-property: outline;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:is(:hover, :focus) {
   outline: 1px solid #2196F3;
@@ -398,13 +391,10 @@ body {
   height: 60px;
   fill: #AFB1B8;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .everybody {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 0;
 }
 .everybody__items {
   display: flex;
@@ -422,8 +412,6 @@ body {
   border-radius: 4px;
   background-color: #F5F4FA;
   transition-property: background-color color box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .everybody__btn:is(:hover, :focus) {
   background-color: #2196F3;
@@ -438,8 +426,6 @@ body {
 .everybody__item {
   flex-basis: calc((100% - 60px) / 3);
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .everybody__wrap {
   position: relative;
@@ -469,8 +455,6 @@ body {
   opacity: 0;
   transform: translateY(100%);
   transition-property: transform opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
 }
 .everybody__wrapper {
@@ -495,8 +479,7 @@ body {
 
 .footer {
   background-color: #2F303A;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 0;
 }
 .footer__box {
   display: flex;
@@ -559,8 +542,6 @@ body {
   justify-content: center;
   align-items: center;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__sending:is(:hover, :focus) {
   background-color: #2196F3;
@@ -609,9 +590,6 @@ body {
   line-height: 1.87;
   letter-spacing: 0.96px;
   animation-name: btn-change;
-  animation-duration: 3500ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-iteration-count: infinite;
 }
 .footer__ikon {
   width: 24px;
@@ -621,9 +599,6 @@ body {
   top: 13px;
   right: 30px;
   animation-name: icon-change;
-  animation-duration: 3500ms;
-  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation-iteration-count: infinite;
 }
 
 @keyframes btn-change {
@@ -682,8 +657,6 @@ body {
   transform: translate(-50%, -50%);
   opacity: 1;
   transition-property: transform;
-  transition-duration: 950ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__close {
   width: 30px;
@@ -706,8 +679,6 @@ body {
   width: 18px;
   height: 18px;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__title {
   color: #212121;
@@ -721,7 +692,7 @@ body {
   color: #757575;
   font-size: 12px;
   font-weight: 400;
-  line-height: normal;
+  line-height: 1.16;
   letter-spacing: 0.12px;
   position: relative;
 }
@@ -737,8 +708,6 @@ body {
   display: block;
   margin-top: 4px;
   transition-property: outline;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:is(:hover, :focus) {
   outline: 1px solid #2196F3;
@@ -754,8 +723,6 @@ body {
   top: 30px;
   left: 12px;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__comment {
   padding: 12px 16px;
@@ -773,15 +740,13 @@ body {
   letter-spacing: 0.12px;
   resize: none;
   transition-property: outline;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__comment:is(:hover, :focus) {
   outline: 1px solid #2196F3;
 }
 .modal__box {
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.36px;
   color: #757575;
@@ -806,8 +771,8 @@ body {
   justify-content: center;
 }
 .modal__sent {
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.96px;
   text-align: center;
@@ -815,8 +780,6 @@ body {
   padding: 10px 52px;
   background-color: #2196F3;
   transition-property: background-color box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__sent:is(:hover, :focus) {
   background-color: #188CE8;

@@ -4,11 +4,12 @@
 
   &__title {
     color: $text-color;
-    font-size: 36px;
-    font-weight: 700;
+    // font-size: 36px;
+    // font-weight: 700;
+    // line-height: 1.16;
+    // letter-spacing: 1.08px;
+    @include font-style ($fSize:36px, $fHeight:1.16, $fSpacing:1.08px);
     text-align: center;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
     margin-bottom: 50px;
   }
 
@@ -32,10 +33,11 @@
   &__subtitle {
     color: $text-color;
     text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
+    // font-size: 16px;
+    // font-weight: 500;
+    // line-height: 1.18;
+    // letter-spacing: 0.48px;
+    @include font-style ($fWeight:500, $fHeight:1.18, $fSpacing:0.48px);
     margin-bottom: 10px;
   }
 
@@ -46,6 +48,7 @@
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
+    @include font-style ($fWeight:400, $fHeight:1.18, $fSpacing:0.48px);
   }
 
   &__items {
@@ -63,8 +66,7 @@
     justify-content: center;
     align-items: center;
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 
     &:is(:hover, :focus) {
       background-color: $accent-color;
@@ -79,7 +81,6 @@
     width: 20px;
     height: 20px;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
 }
