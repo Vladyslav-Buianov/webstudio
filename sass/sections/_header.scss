@@ -4,9 +4,10 @@
   border-bottom: 1px solid $header-line;
 
   &__box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexbox ($gap:0);
   }
 
   &__logo {
@@ -29,9 +30,10 @@
   }
 
   &__list {
-    display: flex;
-    align-items: center;
-    gap: 50px;
+    // display: flex;
+    // align-items: center;
+    // gap: 50px;
+    @include flexbox ($justify: flex-start, $gap:50px);
   }
 
   &__link {
@@ -50,9 +52,10 @@
     }
   }
   &__items {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+    // display: flex;
+    // align-items: center;
+    // gap: 30px;
+    @include flexbox ($justify: flex-start);
   }
   &__sending {
     color: $desk-color;
@@ -61,10 +64,11 @@
     // line-height: 1.14;
     // letter-spacing: 0.28px;
     @include font-style ($fSize:14px, $fWeight:500, $fSpacing:0.28px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // gap: 10px;
+    @include flexbox ($direction: row,$wrap: nowrap, $gap:10px);
     transition-property: color;
     @extend %transition;
 

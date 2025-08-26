@@ -2,9 +2,10 @@
   padding: 94px 0;
 
   &__items {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
+    // display: flex;
+    // justify-content: center;
+    // gap: 8px;
+    @include flexbox ($align: stretch, $gap: 8px);
     margin-bottom: 50px;
   }
 
@@ -29,9 +30,10 @@
   }
 
   &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    // display: flex;
+    // flex-wrap: wrap;
+    // gap: 30px;
+    @include flexbox ($align: stretch, $justify: flex-start, $wrap: wrap);
   }
 
   &__item {

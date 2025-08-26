@@ -7,10 +7,11 @@
   background-size: cover;
 
   &__box {
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    flex-direction: column;
+    // display: flex;
+    // align-items: center;
+    // justify-items: center;
+    // flex-direction: column;
+    @include flexbox ($direction: column, $gap:0);
   }
   &__title {
     color: $main-color;

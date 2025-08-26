@@ -13,9 +13,10 @@
 }
 
 &__list{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    // display: flex;
+    // justify-content: center;
+    // gap: 30px;
+    @include flexbox ($align: stretch);
 }
 
 &__link{
@@ -23,9 +24,10 @@
     height: 92px;
     border-radius: 4px;
     outline: 1px solid $icon-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexbox ($gap:0);
     transition-property: outline;
     @extend %transition;
 

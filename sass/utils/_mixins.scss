@@ -1,6 +1,15 @@
-@mixin font-style ($fSize:16px, $fWeight:700, $fHeight:1.14, $fSpacing:0.42px){
-    font-size: $fSize;
-    font-weight: $fWeight;
-    line-height: $fHeight;
-    letter-spacing: $fSpacing;
+@mixin font-style ($fSize: 16px,$fWeight: 700,$fHeight: 1.14,$fSpacing: 0.42px) {
+  font-size: $fSize;
+  font-weight: $fWeight;
+  line-height: $fHeight;
+  letter-spacing: $fSpacing;
+}
+
+@mixin flexbox ($align: center,$justify: center,$direction: row,$wrap: nowrap, $gap:30px) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+  gap: $gap;
 }

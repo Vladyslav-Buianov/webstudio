@@ -14,9 +14,10 @@
   }
 
   &__list {
-    display: flex;
-    align-content: center;
-    gap: 30px;
+    // display: flex;
+    // align-content: center;
+    // gap: 30px;
+    @include flexbox ($justify: flex-start);
   }
 
   &__item {
@@ -53,18 +54,20 @@
 
   &__items {
     margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    // display: flex;
+    // justify-content: center;
+    // gap: 10px;
+    @include flexbox ($align: stretch, $gap:10px);
   }
 
   &__link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexbox ($gap:0);
     transition-property: background-color;
     @extend %transition;
 

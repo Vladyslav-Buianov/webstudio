@@ -28,9 +28,10 @@
 }
 
 &__list{
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 9px;
+    @include flexbox ($align: stretch,$justify: flex-start,$direction: column,$gap:9px);
 
     & :first-child>.footer__link{
     color: $main-color;
@@ -62,9 +63,10 @@
 }
 
 &__items{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    // display: flex;
+    // justify-content: center;
+    // gap: 10px;
+    @include flexbox ($align: stretch, $gap: 10px);
 }
 
 &__sending{
@@ -72,9 +74,10 @@
     height: 44px;
     border-radius: 50%;
     background-color: $footer-icon-bg;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    @include flexbox ($gap:0);
     transition-property: background-color;
     @extend %transition;
 
