@@ -3,7 +3,13 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
+
+    @media screen and (min-width: 786px){
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__item::before {
@@ -17,6 +23,14 @@
     background-image: url(../img/antena.webp);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 786px){
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px){
+      width: 270px;
+    }
   }
 
   &__item:nth-child(2)::before {
@@ -33,6 +47,8 @@
 
   &__title {
     color: $text-color;
+    width: 100%;
+    text-align: center;
     // font-size: 14px;
     // font-weight: 700;
     // line-height: 1.14;
@@ -40,14 +56,32 @@
     @include font-style ($fSize:14px);
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 786px){
+      text-align: start;
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px){
+      width: 270px;
+    }
   }
 
   &__text {
     color: $desk-color;
+    width: 100%;
     // font-size: 14px;
     // font-weight: 400;
     // line-height: 1.71;
     // letter-spacing: 0.42px;
     @include font-style($fWeight:400, $fHeight:1.71);
+
+    @media screen and (min-width: 786px){
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px){
+      width: 270px;
+    }
   }
 }

@@ -5,22 +5,26 @@
     color: $text-color;
     margin-bottom: 50px;
     text-align: center;
-    // font-size: 36px;
-    // font-weight: 700;
-    // line-height: 1.16;
-    // letter-spacing: 1.08px;
-    @include font-style($fSize:36px, $fHeight:1.16, $fSpacing:1.08px);
+    @include font-style($fSize: 28px, $fHeight: 1.17, $fSpacing: 0.84px);
+    
+    @media screen and (min-width: 1200px){
+      // font-size: 36px;
+      // font-weight: 700;
+      // line-height: 1.16;
+      // letter-spacing: 1.08px;
+      @include font-style($fSize: 36px, $fHeight: 1.16, $fSpacing: 1.08px);
+    }
 }
 
 &__list{
     // display: flex;
     // justify-content: center;
     // gap: 30px;
-    @include flexbox ($align: stretch);
+    @include flexbox ($align: stretch, $wrap: wrap);
 }
 
 &__link{
-    width: 170px;
+    width: 210px;
     height: 92px;
     border-radius: 4px;
     outline: 1px solid $icon-color;
@@ -30,6 +34,14 @@
     @include flexbox ($gap:0);
     transition-property: outline;
     @extend %transition;
+
+    @media screen and (min-width: 786px){
+        width: 226px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 170px;
+    }
 
    &:is(:hover,:focus){
     outline: 1px solid $accent-color;
