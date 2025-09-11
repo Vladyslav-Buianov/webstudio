@@ -43,7 +43,6 @@
 
   &__nav {
     display: none;
-    margin-right: auto;
 
     @media screen and (min-width:768px) {
     display: block;
@@ -78,7 +77,8 @@
     
 
     @media screen and (min-width:768px) {
-      @include flexbox ($justify: flex-start, $direction: column, $gap: 10px);
+      @include flexbox ($justify: flex-start, $align:stretch, $direction: column, $gap: 10px);
+      margin-left: auto;
     }
 
     @media screen and (min-width:1200px) {

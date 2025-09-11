@@ -23,8 +23,20 @@
     @include flexbox ($align: stretch, $wrap: wrap);
 }
 
+&__item{
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width: 768px){
+      flex-basis: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width: 768px){
+      flex-basis: calc((100% - 150px) / 6);
+    }
+}
+
 &__link{
-    width: 210px;
+    width: 100%;
     height: 92px;
     border-radius: 4px;
     outline: 1px solid $icon-color;
@@ -35,7 +47,7 @@
     transition-property: outline;
     @extend %transition;
 
-    @media screen and (min-width: 786px){
+    @media screen and (min-width: 768px){
         width: 226px;
     }
 

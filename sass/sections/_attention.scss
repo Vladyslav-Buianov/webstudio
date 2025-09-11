@@ -6,7 +6,7 @@
     flex-direction: column;
     gap: 30px;
 
-    @media screen and (min-width: 786px){
+    @media screen and (min-width: 768px){
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -24,7 +24,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @media screen and (min-width: 786px){
+    @media screen and (min-width: 768px){
       width: 354px;
     }
 
@@ -57,7 +57,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
 
-    @media screen and (min-width: 786px){
+    @media screen and (min-width: 768px){
       text-align: start;
       width: 354px;
     }
@@ -76,7 +76,7 @@
     // letter-spacing: 0.42px;
     @include font-style($fWeight:400, $fHeight:1.71);
 
-    @media screen and (min-width: 786px){
+    @media screen and (min-width: 768px){
       width: 354px;
     }
 

@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
 
-    @media screen and (min-width: 786px) {
+    @media screen and (min-width: 768px) {
       align-items: baseline;
       flex-direction: row;
       flex-wrap: wrap;
@@ -24,7 +24,7 @@
     text-align: center;
     margin-bottom: 60px;
 
-    @media screen and (min-width: 786px) {
+    @media screen and (min-width: 768px) {
       margin-right: 165px;
       margin-bottom: 0;
     }
@@ -80,15 +80,6 @@
     @include font-style($fSize: 14px, $fWeight: 400, $fHeight: 1.71);
   }
 
-  &__wrap {
-    margin-bottom: 60px;
-
-    @media screen and (min-width: 1200px){
-        margin-right: 92px;
-        margin-bottom: 0;
-    }
-  }
-
   &__title {
     margin-bottom: 20px;
     text-align: center;
@@ -136,19 +127,15 @@
   }
 
   &__wraper{
-    margin-top: 84px;
-    // display: flex;
-    // justify-content: center;
-    // flex-wrap: wrap;
-
+    margin-top: 60px;
+    
     @media screen and (min-width: 1200px){
-      // justify-content: flex-start;
+      margin-left: auto;
+      margin-top: 0;
     }
-
   }
 
   &__form {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -203,6 +190,10 @@
     // letter-spacing: 0.48px;
     @include font-style($fWeight: 400, $fHeight: 1.25, $fSpacing: 0.48px);
 
+    @media screen and (min-width: 768px){
+        width: 450px;
+    }
+
     @media screen and (min-width: 1200px){
       width: 358px;
     }
@@ -237,21 +228,8 @@
     width: 24px;
     height: 24px;
     fill: $main-color;
-    // position: absolute;
-    // top: 30px;
-    // right: 30px;
     animation-name: icon-change;
     @extend %animation;
-
-    // @media screen and (min-width: 786px){
-    //   top: 82px;
-    //   right: 225px;
-    // }
-
-    // @media screen and (min-width: 1200px){
-    //   top: 30px;
-    //   right: 30px;
-    // }
   }
 }
 

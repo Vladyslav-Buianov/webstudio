@@ -25,7 +25,7 @@
     margin-bottom: 30px;
     @include font-style ($fSize: 26px,$fWeight: 900,$fHeight: 1.61,$fSpacing: 1.56px);
 
-    @media  screen and (min-width: 786px) {
+    @media  screen and (min-width: 768px) {
       width: 360px;
     }
 
