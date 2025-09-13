@@ -1,5 +1,9 @@
 .everybody {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px){
+    padding: 94px 0;
+  }
 
   &__items {
     display: flex;
@@ -97,6 +101,15 @@
 
     @media screen and (min-width: 1200px){
       padding: 63px 24px;
+    }
+  }
+
+  &__wraper {
+    padding: 20px 24px;
+    outline: 1px solid $outline-everybody-color;
+
+    @media screen and (min-width: 768px){
+      padding: 20px 24px 56px;
     }
   }
 

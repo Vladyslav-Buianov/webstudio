@@ -171,7 +171,7 @@ body {
   letter-spacing: 0.24px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 10px;
@@ -183,6 +183,7 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    justify-content: center;
   }
 }
 .header__sending:is(:hover, :focus) {
@@ -310,7 +311,12 @@ body {
 }
 
 .attention {
-  padding-top: 94px;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .attention {
+    padding: 94px;
+  }
 }
 .attention__list {
   display: flex;
@@ -441,7 +447,12 @@ body {
 
 .our {
   background-color: #F5F4FA;
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .our {
+    padding: 94px 0;
+  }
 }
 .our__title {
   color: #212121;
@@ -569,7 +580,12 @@ body {
 }
 
 .clients {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
+  }
 }
 .clients__title {
   color: #212121;
@@ -646,7 +662,12 @@ body {
 }
 
 .everybody {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .everybody {
+    padding: 94px 0;
+  }
 }
 .everybody__items {
   display: flex;
@@ -753,6 +774,15 @@ body {
 @media screen and (min-width: 1200px) {
   .everybody__desk {
     padding: 63px 24px;
+  }
+}
+.everybody__wraper {
+  padding: 20px 24px;
+  outline: 1px solid #EEE;
+}
+@media screen and (min-width: 768px) {
+  .everybody__wraper {
+    padding: 20px 24px 56px;
   }
 }
 .everybody__wrapper {
@@ -970,7 +1000,7 @@ body {
   line-height: 1.25;
   letter-spacing: 0.48px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .footer__input {
     width: 450px;
   }

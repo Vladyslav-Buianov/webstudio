@@ -96,7 +96,7 @@
     // justify-content: center;
     // align-items: center;
     // gap: 10px;
-    @include flexbox ($direction: row,$wrap: nowrap, $gap:10px);
+    @include flexbox ($justify: flex-start,$direction: row,$wrap: nowrap, $gap:10px);
     transition-property: color;
     @extend %transition;
 
@@ -106,6 +106,7 @@
       // line-height: 1.14;
       // letter-spacing: 0.28px;
       @include font-style ($fSize:14px, $fWeight:500, $fHeight: 1.14, $fSpacing:0.28px);
+      justify-content: center;
     }
 
     &:is(:hover, :focus) {

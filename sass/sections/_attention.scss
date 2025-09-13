@@ -1,5 +1,9 @@
 .attention {
-  padding-top: 94px;
+  padding: 60px 0;
+
+  @media screen and (min-width: 1200px){
+    padding: 94px;
+  }
 
   &__list {
     display: flex;

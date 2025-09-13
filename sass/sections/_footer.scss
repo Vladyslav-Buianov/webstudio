@@ -190,7 +190,7 @@
     // letter-spacing: 0.48px;
     @include font-style($fWeight: 400, $fHeight: 1.25, $fSpacing: 0.48px);
 
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 480px){
         width: 450px;
     }
 
