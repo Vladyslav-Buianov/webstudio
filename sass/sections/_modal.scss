@@ -20,8 +20,8 @@
 .modal {
   background-color: $main-color;
   padding: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   position: absolute;
@@ -31,6 +31,11 @@
   opacity: 1;
   transition-property: transform;
   @extend %transition;
+
+  @media screen and (min-width: 1200px){
+    width: 528px;
+    height: 581px;
+  }
 
   &__close {
     width: 30px;
@@ -66,7 +71,11 @@
     // font-weight: 700;
     // line-height: 1.15;
     // letter-spacing: 0.6px;
-    @include font-style ($fSize:20px, $fHeight:1.15, $fSpacing:0.6px);
+    @include font-style ($fSize:20px, $fHeight:1.5, $fSpacing:0.6px);
+
+    @media screen and (min-width: 1200px){
+      @include font-style ($fSize:20px, $fHeight:1.15, $fSpacing:0.6px);
+    }
   }
 
   &__label {
@@ -126,10 +135,14 @@
     // font-weight: 400;
     // line-height: 1.16;
     // letter-spacing: 0.12px;
-    @include font-style ($fSize:12px, $fWeight:400, $fHeight:1.16, $fSpacing:0.12px);
+    @include font-style ($fSize:14px, $fWeight:400, $fHeight:1.16, $fSpacing:0.14px);
     resize: none;
     transition-property: outline;
     @extend %transition;
+
+    @media screen and (min-width: 1200px){
+      @include font-style ($fSize:12px, $fWeight:400, $fHeight:1.16, $fSpacing:0.12px);
+    }
 
     &:is(:hover, :focus) {
       outline: 1px solid $accent-color;
