@@ -25,29 +25,120 @@
     height: 120px;
     border-radius: 4px;
     background-color: $button-before-and-our-section-bg;
-    background-image: url(../img/antena.webp);
+    background-image: url(../img/mobile/mobile-antena1x@.webp);
     background-repeat: no-repeat;
     background-position: center;
-
-    @media screen and (min-width: 768px){
+    overflow: hidden;
+    
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/mobile/mobile-antena@2x.webp);
+    }
+    @media screen and (min-width:768px) {
       width: 354px;
-    }
-
-    @media screen and (min-width: 1200px){
-      width: 270px;
+      background-image: url(../img/tablet/tablet-antena@1x.webp);
+      @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/tablet/tablet-antena@2x.webp);
     }
   }
-
+  @media screen and (min-width:1200px) {
+    width: 270px;
+    background-image: url(../img/pc/pc-antena@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/pc/pc-antena@2x.webp);
+    }
+  }
+}
   &__item:nth-child(2)::before {
-    background-image: url(../img/clock.webp);
+    background-image: url(../img/mobile/mobile-clock1x@.webp);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/mobile/mobile-clock@2x.webp);
+    }
+    @media screen and (min-width:768px) {
+      background-image: url(../img/tablet/tablet-clock@1x.webp);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/tablet/tablet-clock@2x.webp);
+    }
   }
+  @media screen and (min-width:1200px) {
+    background-image: url(../img/pc/pc-clock@1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/pc/pc-clock@2x.webp);
+    }
+  }
+}
 
   &__item:nth-child(3)::before {
-    background-image: url(../img/laptop.webp);
+    background-image: url(../img/mobile/mobile-laptop1x@.webp);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/mobile/mobile-laptop@2x.webp);
+    }
+    @media screen and (min-width:768px) {
+      background-image: url(../img/tablet/tablet-laptop@1x.webp);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/tablet/tablet-laptop@2x.webp);
+      }
+    }
+    @media screen and (min-width:1200px) {
+      background-image: url(../img/pc/pc-laptop@1x.webp);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/pc/pc-laptop@2x.webp);
+      }
+    }
   }
 
   &__item:nth-child(4)::before {
-    background-image: url(../img/astronaut.webp);
+    background-image: url(../img/mobile/mobile-astronaut1x@.webp);
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../img/mobile/mobile-astronaut@2x.webp);
+    }
+    @media screen and (min-width:768px) {
+      background-image: url(../img/tablet/tablet-astronaut@1x.webp);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/tablet/tablet-astronaut@2x.webp);
+      }
+    }
+    @media screen and (min-width:1200px) {
+      background-image: url(../img/pc/pc-astronaut@1x.webp);
+      @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(../img/pc/pc-astronaut@2x.webp);
+      }
+    }
   }
 
   &__title {
