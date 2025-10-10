@@ -1021,6 +1021,11 @@ body {
     padding: 20px 24px 56px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .everybody__wraper {
+    padding: 20px 24px;
+  }
+}
 .everybody__wrapper {
   padding: 20px 24px;
   outline: 1px solid #EEE;
