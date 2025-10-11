@@ -480,14 +480,14 @@ body {
   height: 120px;
   border-radius: 4px;
   background-color: #F5F4FA;
-  background-image: url(../img/mobile/mobile-antena1x@.webp);
+  background-image: url(../../img/mobile/mobile-antena@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   overflow: hidden;
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .attention__item::before {
-    background-image: url(../img/mobile/mobile-antena@2x.webp);
+    background-image: url(../../img/mobile/mobile-antena@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
@@ -513,11 +513,11 @@ body {
   }
 }
 .attention__item:nth-child(2)::before {
-  background-image: url(../img/mobile/mobile-clock1x@.webp);
+  background-image: url(../../img/mobile/mobile-clock@1x.webp);
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .attention__item:nth-child(2)::before {
-    background-image: url(../img/mobile/mobile-clock@2x.webp);
+    background-image: url(../../img/mobile/mobile-clock@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
@@ -541,11 +541,11 @@ body {
   }
 }
 .attention__item:nth-child(3)::before {
-  background-image: url(../img/mobile/mobile-laptop1x@.webp);
+  background-image: url(../../img/mobile/mobile-laptop@1x.webp);
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .attention__item:nth-child(3)::before {
-    background-image: url(../img/mobile/mobile-laptop@2x.webp);
+    background-image: url(../../img/mobile/mobile-laptop@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
@@ -569,11 +569,11 @@ body {
   }
 }
 .attention__item:nth-child(4)::before {
-  background-image: url(../img/mobile/mobile-astronaut1x@.webp);
+  background-image: url(../../img/mobile/mobile-astronaut@1x.webp);
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .attention__item:nth-child(4)::before {
-    background-image: url(../img/mobile/mobile-astronaut@2x.webp);
+    background-image: url(../../img/mobile/mobile-astronaut@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
